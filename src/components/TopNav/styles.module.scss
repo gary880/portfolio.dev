@@ -1,0 +1,13 @@
+.nav_container {
+  padding: 24px 5%;
+  background-color: rgba($color: #ffffff, $alpha: 0.2);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.nav_title {
+  text-align: center;
+  margin: 0;
+  font-weight: 800;
+  cursor: pointer;
+}
