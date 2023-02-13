@@ -1,10 +1,10 @@
 import { useSpring, animated } from '@react-spring/web'
 import { useEffect } from 'react'
 import styles from "./styles.module.scss";
-import RaisingText from '../RaisingText';
 import 'aos/dist/aos.css';
 
-const Welcome = ({ welcomeRef, scrollYvalue }) => {
+
+const Welcome = ({ scrollYvalue }) => {
 
     const fadein = useSpring({
         from: { marginLeft: scrollYvalue ? "0%" : "0%" },
@@ -21,15 +21,15 @@ const Welcome = ({ welcomeRef, scrollYvalue }) => {
 
     return (
         <>
-           
-            <div className={styles.container} ref={welcomeRef} style={scrollYvalue < 2 ? { opacity: 1, zIndex: 10 } : { opacity: 0, zIndex: -1 }}>
-                <animated.div style={fadein}>
-                    <p data-aos="fade-up" className={styles.trailsText} >你好</p>
-                    <p data-aos="fade-up" data-aos-delay="300" className={styles.trailsText} style={{ fontSize: '5rem' }}>我是陳有朋</p>
-
+            < div className={styles.container} >
+                <animated.div style={fadein} >
+                    <p data-aos="fade-up" className={styles.trailsText} style={scrollYvalue > 1 ? { width: "0%" } : {}}>你好</p>
+                    <p data-aos="fade-up" data-aos-delay="300" className={styles.trailsText} style={scrollYvalue > 1 ? { width: "0%" } : { fontSize: "5rem" }}>我是陳有朋</p>
                 </animated.div>
 
             </div>
+
+
         </>
 
     )

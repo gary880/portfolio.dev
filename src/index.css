@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&display=swap&subset=chinese-traditional');
+
 html,
 body,
 #root {
@@ -9,9 +11,8 @@ body {
     font-family: "Noto Sans TC", "Noto Sans SC", sans-serif;
     margin: 0;
 }
-body::-webkit-scrollbar {
-    
-}
+
+
 *,
 *:after,
 *:before {
