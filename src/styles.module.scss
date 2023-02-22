@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&display=swap&subset=chinese-traditional');
+
 .body_container {
   background-color: #ffffff;
   width: 100%;
   padding: 0 5% 0 5%;
   height: calc(100vh - 81px);
   position: relative;
+  
 }
 
 
@@ -65,7 +68,7 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-duration: 1.5s;
-  color: #9F7065;
+  color: #6a85b6;
 }
 
 

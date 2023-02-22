@@ -17,7 +17,7 @@ const App = () => {
   const containerRef = useRef(null);
   const [scrollYvalue, setScrollYvalue] = useState(0);
   const PageChange = (scrollY) => {
-    var page_break_points = [0, 1, 1000, 2000, 3000, 4000];
+    var page_break_points = [0, 1, 1000, 2000, 3000];
 
     for (let i = 0; i < page_break_points.length; i++) {
       if (

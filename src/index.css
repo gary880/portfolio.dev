@@ -3,12 +3,12 @@
 html,
 body,
 #root {
-    height: calc(100vh + 4800px);
+    height: calc(100vh + 3000px);
     width: 100%;
 }
 
 body {
-    font-family: "Noto Sans TC", "Noto Sans SC", sans-serif;
+    font-family: "Noto Sans TC", "Noto Sans SC", sans-serif !important;
     margin: 0;
 }
 

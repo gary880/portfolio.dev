@@ -7,7 +7,7 @@ import RaisingText from '../RaisingText';
 
 const AboutM = ({ open, scrollYvalue }) => {
     const contentArr = [
-        <p style={{ fontSize: '24px', fontWeight: '600', color: '#2D3142', margin: 0 }}>關於我</p>,
+        <p style={{ fontSize: '24px', fontWeight: '600', color: '#6e45e2', margin: 0 }}>關於我</p>,
         <p style={{ fontSize: '18px', color: '#FFFFFF', margin: 0 }}>中正大學 通訊工程畢業</p>,
         <p style={{ fontSize: '18px', color: '#FFFFFF', margin: 0 }}>目前在 中銳科技 擔任 前端工程師</p>,
         <p style={{ fontSize: '18px', color: '#FFFFFF', margin: 0 }}>一年 React JS 開發經驗</p>

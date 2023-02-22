@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useSpring, a, animated } from '@react-spring/web'
 import styles from './styles.module.scss'
-import { FaTools, FaLaptopHouse, FaShapes } from 'react-icons/fa'
+import { FaTools, FaLaptopHouse, FaShapes, FaReply } from 'react-icons/fa'
 
 const FilpCard = ({ front, back }) => {
     const [flipped, setFlipped] = useState(false)
@@ -18,15 +18,18 @@ const FilpCard = ({ front, back }) => {
                 className={styles.card}
                 style={{ opacity: opacity.to(o => 1 - o), transform }}
             >
-                <div>
-                    <p>
+                <div className={styles.cardtitle}>
+                    <p className={styles.cardIcon}>
                         {front.icon}
                     </p>
                     <p >
                         {front.text}
                     </p>
                 </div>
-
+                <div className={styles.flipHint}>
+                    <FaReply style={{ transform: "rotate(180deg)" }} />
+                    flip
+                </div>
             </a.div>
             <a.div
                 onClick={() => setFlipped(!flipped)}
@@ -39,11 +42,16 @@ const FilpCard = ({ front, back }) => {
             >
                 {back.map((item) => {
                     return (
-                        <p >{item}</p>
+                        <p className={styles.skillItems}>{item}</p>
                     )
 
                 })}
+                <div className={styles.flipHint}>
+                    <FaReply style={{ transform: "rotate(180deg)" }} />
+                    flip
+                </div>
             </a.div>
+
         </div>
 
     )
