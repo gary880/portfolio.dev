@@ -7,10 +7,10 @@ import RaisingText from '../RaisingText';
 
 const AboutM = ({ open, scrollYvalue }) => {
     const contentArr = [
-        <p style={{ fontSize: '24px', fontWeight: '600', color: '#6e45e2', margin: 0 }}>關於我</p>,
+        <p style={{ fontSize: '24px', fontWeight: '600', color: 'white', margin: 0 }}>關於我</p>,
         <p style={{ fontSize: '18px', color: '#FFFFFF', margin: 0 }}>中正大學 通訊工程畢業</p>,
-        <p style={{ fontSize: '18px', color: '#FFFFFF', margin: 0 }}>目前在 中銳科技 擔任 前端工程師</p>,
-        <p style={{ fontSize: '18px', color: '#FFFFFF', margin: 0 }}>一年 React JS 開發經驗</p>
+        <p style={{ fontSize: '18px', color: '#FFFFFF', margin: 0 }}>目前是前端工程師</p>,
+        <p style={{ fontSize: '18px', color: '#FFFFFF', margin: 0 }}>{new Date().getFullYear() - 2021}年前端開發經驗</p>
     ]
     const InsertIn = useSpring({
         from: { height: scrollYvalue >= 0 ? "0%" : "0%" },

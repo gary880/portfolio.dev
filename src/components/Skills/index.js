@@ -91,7 +91,7 @@ const Skills = ({ scrollYvalue }) => {
     const contentArr = [
         {
             front: { text: "前端開發", icon: <FaLaptopHouse /> },
-            back: ["JavaScript", "React JS"]
+            back: ["TypeScript", "React","Swift","React Native"]
         },
         {
             front: { text: "Web Layout", icon: <FaShapes /> },
